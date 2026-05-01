@@ -1,61 +1,337 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
+  <meta charset="UTF-8" />
   <title>星星魚選3C</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", Arial, sans-serif;
+      background: linear-gradient(135deg, #e0f2fe, #fff1f2);
+      color: #1f2937;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 28px 18px 48px;
+    }
+
+    .hero {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 28px;
+      padding: 34px 22px;
+      text-align: center;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+      backdrop-filter: blur(10px);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #dbeafe;
+      color: #2563eb;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 8px 0 10px;
+      font-size: 40px;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      margin: 0 auto;
+      max-width: 620px;
+      color: #64748b;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .notice {
+      margin: 20px auto 0;
+      max-width: 560px;
+      padding: 12px 14px;
+      border-radius: 18px;
+      background: #fff7ed;
+      color: #c2410c;
+      font-weight: 700;
+    }
+
+    .section {
+      margin-top: 26px;
+      background: rgba(255, 255, 255, 0.82);
+      border-radius: 26px;
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .section h2 {
+      margin: 0 0 14px;
+      font-size: 26px;
+      text-align: center;
+    }
+
+    .tabs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 18px;
+      padding: 15px 12px;
+      background: #0f172a;
+      color: white;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(15, 23, 42, 0.18);
+      transition: 0.18s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      background: #2563eb;
+    }
+
+    .content {
+      margin-top: 22px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .card {
+      text-align: left;
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 18px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 21px;
+    }
+
+    .item {
+      margin-top: 12px;
+      padding: 14px;
+      border-radius: 18px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+    }
+
+    .item-title {
+      font-weight: 900;
+      margin-bottom: 6px;
+    }
+
+    .item-desc {
+      color: #64748b;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    a.product-link,
+    a.channel-link {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #2563eb;
+      color: white;
+      font-weight: 800;
+      transition: 0.18s;
+    }
+
+    a.product-link:hover,
+    a.channel-link:hover {
+      transform: translateY(-2px);
+      background: #1d4ed8;
+    }
+
+    .youtube {
+      text-align: center;
+    }
+
+    .footer {
+      margin-top: 24px;
+      text-align: center;
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    @media (min-width: 760px) {
+      .tabs {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      h1 {
+        font-size: 52px;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
-<body style="font-family:sans-serif;text-align:center;padding:40px;">
+<body>
+  <main class="container">
+    <section class="hero">
+      <div class="badge">高中生打造的 AI 3C 推薦站</div>
+      <h1>🐟 星星魚選 3C</h1>
+      <p class="subtitle">
+        不讓你亂花錢的 AI 女友 ❤️<br>
+        幫學生族群整理高 CP 值耳機、滑鼠、鍵盤和電腦小配件。
+      </p>
 
-  <h1>🐟 星星魚選3C</h1>
-  <p>不讓你亂花錢的AI女友 ❤️</p>
+      <div class="notice">
+        ⚠️ 網站還在優化中，商品會持續更新！
+      </div>
+    </section>
 
-  <!-- 🔔 提示 -->
-  <p style="color:red;">⚠️ 網站還在優化中，商品會持續更新！</p>
+    <section class="section">
+      <h2>🔥 推薦商品</h2>
 
-  <hr>
+      <div class="tabs">
+        <button onclick="showCategory('earphone')">🎧 耳機</button>
+        <button onclick="showCategory('mouse')">🖱 滑鼠</button>
+        <button onclick="showCategory('keyboard')">⌨ 鍵盤</button>
+        <button onclick="showCategory('accessory')">🧩 小配件</button>
+      </div>
 
-  <!-- 📦 分類選擇 -->
-  <h2>🔥 推薦商品</h2>
+      <div id="content" class="content">
+        <div class="card">
+          <h3>先選一個分類吧 🐟</h3>
+          <p class="item-desc">
+            點上面的分類，星星魚會幫你列出適合學生預算的 3C 推薦。
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <button onclick="showCategory('earphone')">🎧 耳機</button>
-  <button onclick="showCategory('mouse')">🖱 滑鼠</button>
-  <button onclick="showCategory('keyboard')">⌨ 鍵盤</button>
+    <section class="section youtube">
+      <h2>📺 看影片</h2>
+      <p class="item-desc">
+        Shorts 會更新商品推薦、避雷清單和學生 3C 好物。
+      </p>
+      <a class="channel-link" href="https://www.youtube.com/channel/UCh7eZnyPZFz48y7NjUkbIew" target="_blank">
+        👉 我的頻道
+      </a>
+    </section>
 
-  <div id="content" style="margin-top:20px;"></div>
-
-  <hr>
-
-  <!-- 📺 看影片 -->
-  <h2>📺 看影片</h2>
-  <a href="https://www.youtube.com/channel/UCh7eZnyPZFz48y7NjUkbIew" target="_blank">👉 我的頻道</a>
+    <p class="footer">
+      © 2026 星星魚選3C｜AI 輔助整理，購買前請依自身需求判斷。
+    </p>
+  </main>
 
   <script>
     function showCategory(type) {
-      let content = document.getElementById("content");
+      const content = document.getElementById("content");
 
       if (type === "earphone") {
         content.innerHTML = `
-          <h3>🎧 耳機推薦</h3>
-          <a href="你的蝦皮耳機連結" target="_blank">🔥 平價神耳機</a>
+          <div class="card">
+            <h3>🎧 耳機推薦</h3>
+
+            <div class="item">
+              <div class="item-title">① 平價高 CP 耳機</div>
+              <div class="item-desc">適合學生、通勤、上課使用，先求穩不踩雷。</div>
+              <a class="product-link" href="你的蝦皮耳機1" target="_blank">👉 查看商品</a>
+            </div>
+
+            <div class="item">
+              <div class="item-title">② 遊戲耳機</div>
+              <div class="item-desc">適合打遊戲、語音聊天，重點看麥克風和配戴舒適度。</div>
+              <a class="product-link" href="你的蝦皮耳機2" target="_blank">👉 查看商品</a>
+            </div>
+          </div>
         `;
       }
 
       if (type === "mouse") {
         content.innerHTML = `
-          <h3>🖱 滑鼠推薦</h3>
-          <a href="你的蝦皮滑鼠連結" target="_blank">🔥 超順滑鼠</a>
+          <div class="card">
+            <h3>🖱 滑鼠推薦</h3>
+
+            <div class="item">
+              <div class="item-title">① 文書無線滑鼠</div>
+              <div class="item-desc">適合上課、報告、日常使用，便宜又方便。</div>
+              <a class="product-link" href="你的蝦皮滑鼠1" target="_blank">👉 查看商品</a>
+            </div>
+
+            <div class="item">
+              <div class="item-title">② 遊戲滑鼠</div>
+              <div class="item-desc">適合 FPS、MOBA 玩家，重點看重量、感應器和手感。</div>
+              <a class="product-link" href="你的蝦皮滑鼠2" target="_blank">👉 查看商品</a>
+            </div>
+          </div>
         `;
       }
 
       if (type === "keyboard") {
         content.innerHTML = `
-          <h3>⌨ 鍵盤推薦</h3>
-          <a href="你的蝦皮鍵盤連結" target="_blank">🔥 CP鍵盤</a>
+          <div class="card">
+            <h3>⌨ 鍵盤推薦</h3>
+
+            <div class="item">
+              <div class="item-title">① 入門機械鍵盤</div>
+              <div class="item-desc">適合想升級手感，但預算還不想爆掉的人。</div>
+              <a class="product-link" href="你的蝦皮鍵盤1" target="_blank">👉 查看商品</a>
+            </div>
+
+            <div class="item">
+              <div class="item-title">② 靜音鍵盤</div>
+              <div class="item-desc">適合宿舍、晚上打字、怕吵到家人的使用情境。</div>
+              <a class="product-link" href="你的蝦皮鍵盤2" target="_blank">👉 查看商品</a>
+            </div>
+          </div>
+        `;
+      }
+
+      if (type === "accessory") {
+        content.innerHTML = `
+          <div class="card">
+            <h3>🧩 電腦小配件</h3>
+
+            <div class="item">
+              <div class="item-title">① 桌面燈條</div>
+              <div class="item-desc">讓桌面更有氛圍，拍短影音也比較好看。</div>
+              <a class="product-link" href="你的蝦皮配件1" target="_blank">👉 查看商品</a>
+            </div>
+
+            <div class="item">
+              <div class="item-title">② USB 集線器</div>
+              <div class="item-desc">筆電、桌機都實用，滑鼠鍵盤耳機一次接好。</div>
+              <a class="product-link" href="你的蝦皮配件2" target="_blank">👉 查看商品</a>
+            </div>
+
+            <div class="item">
+              <div class="item-title">③ 筆電支架</div>
+              <div class="item-desc">改善姿勢，也讓桌面看起來更乾淨。</div>
+              <a class="product-link" href="你的蝦皮配件3" target="_blank">👉 查看商品</a>
+            </div>
+          </div>
         `;
       }
     }
   </script>
-
 </body>
 </html>
