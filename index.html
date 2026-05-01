@@ -4,19 +4,58 @@
   <title>星星魚選3C</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body style="font-family:sans-serif;text-align:center;padding:40px;">
 
   <h1>🐟 星星魚選3C</h1>
   <p>不讓你亂花錢的AI女友 ❤️</p>
 
+  <!-- 🔔 提示 -->
+  <p style="color:red;">⚠️ 網站還在優化中，商品會持續更新！</p>
+
+  <hr>
+
+  <!-- 📦 分類選擇 -->
   <h2>🔥 推薦商品</h2>
 
-  <a href="#">👉 耳機推薦</a><br><br>
-  <a href="#">👉 滑鼠推薦</a><br><br>
-  <a href="#">👉 鍵盤推薦</a>
+  <button onclick="showCategory('earphone')">🎧 耳機</button>
+  <button onclick="showCategory('mouse')">🖱 滑鼠</button>
+  <button onclick="showCategory('keyboard')">⌨ 鍵盤</button>
 
+  <div id="content" style="margin-top:20px;"></div>
+
+  <hr>
+
+  <!-- 📺 看影片 -->
   <h2>📺 看影片</h2>
-  <a href="#">👉 點我看YT</a>
+  <a href="https://www.youtube.com/channel/UCh7eZnyPZFz48y7NjUkbIew" target="_blank">👉 我的頻道</a>
+
+  <script>
+    function showCategory(type) {
+      let content = document.getElementById("content");
+
+      if (type === "earphone") {
+        content.innerHTML = `
+          <h3>🎧 耳機推薦</h3>
+          <a href="你的蝦皮耳機連結" target="_blank">🔥 平價神耳機</a>
+        `;
+      }
+
+      if (type === "mouse") {
+        content.innerHTML = `
+          <h3>🖱 滑鼠推薦</h3>
+          <a href="你的蝦皮滑鼠連結" target="_blank">🔥 超順滑鼠</a>
+        `;
+      }
+
+      if (type === "keyboard") {
+        content.innerHTML = `
+          <h3>⌨ 鍵盤推薦</h3>
+          <a href="你的蝦皮鍵盤連結" target="_blank">🔥 CP鍵盤</a>
+        `;
+      }
+    }
+  </script>
 
 </body>
 </html>
